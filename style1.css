@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(34, 33, 33);
+    min-height: 100vh;
+}
+
+
+.site-header {
+    width: 100%;
+    background-color: black;
+    padding: 25px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.nome-loja {
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.site-header nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 18px 28px;
+    text-decoration: none;
+    color: black;
+    background-color: yellow;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+.botao:hover {
+    background-color: #ffbd2e;
+}
+
+
+/* CONTEÚDO */
+section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1, h2 {
+    color: white;
+    text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+.nome-loja {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    font-weight: 600;
+    color: #59483E;
+}
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+}
+
+.caixa-produto {
+    background-color: #fffaf5;
+    width: 250px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.caixa-produto:hover {
+    transform: translateY(-5px);
+}
+
+.caixa-produto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.caixa-produto h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 27px;
+    color: #59483e;
+}
+
+.caixa-produto p {
+    font-size: 14px;
+    color: #666;
+}
+
+.preco {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    color: #59483e;
+    margin: 15px 0;
+}
+
+.botao-comprar {
+    display: inline-block;
+    background-color: #b69b85;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+
+.botao-comprar:hover {
+    background-color: #8f7460;
+}
