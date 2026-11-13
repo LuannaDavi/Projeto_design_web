@@ -7,25 +7,30 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: rgb(34, 33, 33);
+    background-color: #2e2e2e;
     min-height: 100vh;
 }
 
 
 .site-header {
     width: 100%;
-    background-color: black;
-    padding: 25px 20px;
+    max-width: 810px;
+    margin: 0 auto;
+    background-color:#422f1c;
+    padding: 25px 0;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    gap: 15px;
+
+    position: relative;
+    isolation: isolate;
 }
 
-.nome-loja {
+#fio {
     color: white;
-    font-size: 26px;
+    font-size: 42px;
     text-align: center;
     white-space: nowrap;
 }
@@ -33,15 +38,16 @@ body {
 .site-header nav {
     display: flex;
     align-items: center;
-    gap: 30px;
+    justify-content: flex-end;
+    gap: 15px;
 }
 
 .botao {
     display: inline-block;
-    padding: 18px 28px;
+    padding: 14px 23px;
     text-decoration: none;
     color: black;
-    background-color: yellow;
+    background-color: #aa8472;
     border-radius: 40px;
     cursor: pointer;
     font-size: 20px;
@@ -51,11 +57,10 @@ body {
 
 
 .botao:hover {
-    background-color: #ffbd2e;
+    background-color: #979797;
 }
 
 
-/* CONTEÚDO */
 section {
     text-align: center;
     padding: 50px 20px;
@@ -134,4 +139,17 @@ h1, h2 {
 
 .botao-comprar:hover {
     background-color: #8f7460;
+}
+
+#botao-favoritar{
+    display: inline-block;
+    background-color: #b69b85;
+    color: white;
+    text-decoration: none;
+    padding: 9px 9px;
+    border-radius: 3px;
+}
+
+#botao-favoritar:hover{
+   background-color: #8f7460;
 }
